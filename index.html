@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="container">
-        <h1>🎉 Feliz Aniversário! 🎂</h1>
+        <h1 id="titulo">🎉 Feliz Aniversário! 🎂</h1>
         <p>Que seu dia seja doce e cheio de alegria!</p>
         
         <div class="bolo">
@@ -28,10 +32,12 @@
                 </div>
             </div>
         </div>
-        
+
         <button onclick="apagarVelas()">Sopre as velas!</button>
+
+        <div id="confete"></div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
