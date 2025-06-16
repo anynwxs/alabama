@@ -2,7 +2,7 @@ function apagarVelas() {
     let chamas = document.querySelectorAll('.chama'); // Seleciona todas as chamas das velas
     
     chamas.forEach(chama => {
-        chama.style.opacity = '0'; // Apaga as chamas suavemente
+        chama.style.opacity = '15'; // Apaga as chamas suavemente
         chama.style.animation = 'none'; // Remove a animação para que não fiquem tremulando
     });
 
