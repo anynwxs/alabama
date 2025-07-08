@@ -1,51 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Aniversário!</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Feliz Aniversário, Alabama!</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="musica.mp3" type="audio/mpeg">
-    </audio>
+  <canvas id="fireworks"></canvas>
+  <div class="confetti"></div>
+  <div class="hearts"></div>
 
-    <div class="container">
-        <h1 id="titulo">🎉 Feliz Aniversário! 🎂</h1>
-        <p>Que seu dia seja doce e cheio de alegria!</p>
-        
-        
+  <h1 class="title">🎂 Feliz 19 anos, Alabama! 🎉</h1>
+  <p id="currentTime"></p>
 
-        <button onclick="apagarVelas()">Sopre as velas!</button>
+  <div class="surprise-box" onclick="revealSurprise()">🎁 Clique para abrir seu presente!</div>
+  <div id="surpriseMessage" class="hidden">
+    <p class="message" id="rotatingMessage">Você é incrível, Alabama! 💖</p>
+  </div>
 
-        <div id="confete" function="criarConfete()">
-           
-        </div>
-    </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <div class="bolo">
-            <div class="camada camada1"></div>
-            <div class="camada camada2"></div>
-            <div class="camada camada3"></div>
-            
-            <div class="velas">
-                <div class="vela">
-                    <div class="chama"></div>
-                </div>
-                <div class="vela">
-                    <div class="chama"></div>
-                </div>
-                <div class="vela">
-                    <div class="chama"></div>
-                </div>
-            </div>
-        </div>
+  <div class="countdown">
+    <h2>🎈 Contagem regressiva para a meia-noite do dia 17:</h2>
+    <div id="timer"></div>
+  </div>
 
-    <script src="script.js"></script>
+  <audio id="birthdaySong" autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/16/audio_fddc6a50b4.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
