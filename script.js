@@ -10,7 +10,7 @@ function revealSurprise() {
 
 function countdown() {
   const now = new Date();
-  const targetTime = new Date(now.getFullYear(), now.getMonth(), 17, 0, 0, 0);
+  const targetTime = new Date(now.getFullYear(), now.getMonth(), 8, 0, 0, 0);
   let diff = targetTime - now;
 
   if (diff <= 0) {
